@@ -1,7 +1,7 @@
 //
-// OFUtilities.h
+// PublicPhotosTests.m
 //
-// Copyright (c) 2006-2014 Lukhnos D. Liu (http://lukhnos.org)
+// Copyright (c) 2014 Lukhnos D. Liu (http://lukhnos.org)
 //
 // Permission is hereby granted, free of charge, to any person
 // obtaining a copy of this software and associated documentation
@@ -25,15 +25,29 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
+#import <XCTest/XCTest.h>
 
-NSString *OFMD5HexStringFromNSString(NSString *inStr);
-NSString *OFEscapedURLStringFromNSString(NSString *inStr);
-NSString *OFEscapedURLStringFromNSStringWithExtraEscapedChars(NSString *inStr, NSString *inEscChars);
+@interface PublicPhotosTests : XCTestCase
 
-NSString *OFGenerateUUIDString(void);
+@end
 
-NSString *OFHMACSha1Base64(NSString *inKey, NSString *inMessage);
-NSDictionary *OFExtractURLQueryParameter(NSString *inQuery);
-BOOL OFExtractOAuthCallback(NSURL *inReceivedURL, NSURL *inBaseURL, NSString **outRequestToken, NSString **outVerifier);
+@implementation PublicPhotosTests
 
+- (void)setUp
+{
+    [super setUp];
+    // Put setup code here. This method is called before the invocation of each test method in the class.
+}
+
+- (void)tearDown
+{
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    [super tearDown];
+}
+
+- (void)testExample
+{
+    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+}
+
+@end

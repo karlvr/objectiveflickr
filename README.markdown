@@ -63,6 +63,11 @@ There are of course quite a few to-do's:
 Quick Start: Example Apps You Can Use
 =====================================
 
+**UPDATE 2.0.4**: If you use [CocoaPods](http://cocoapods.org/), you should
+check out [the new sample projects](https://github.com/lukhnos/objectiveflickr/tree/master/Examples/CocoaPodsSampleProjects)
+that make use of the tool to manage ObjectiveFlickr for you.
+
+
 1. Check out the code from github:
 
         git clone git://github.com/lukhnos/objectiveflickr.git
@@ -88,9 +93,15 @@ Quick Start: Example Apps You Can Use
 Adding ObjectiveFlickr to Your Project
 ======================================
 
-Unlike Microsoft Visual Studio, Xcode does not shine in cross-project 
-development. Fortunately you don't need to do this often. If anything fails, 
-refer to our example apps for the project file structuring.
+**UPDATE 2.0.4**: This section shows its age and needs updating. Pull requests
+on an up-to-date instruction will be appreciated! Meanwhile, if you use
+[CocoaPods](http://cocoapods.org/), you can easily add ObjectiveFlickr to your
+project by adding this one line to you `podfile`:
+
+    pod 'objectiveflickr'
+
+Then just run `pod install` and start using ObjectiveFlickr.
+
 
 Adding ObjectiveFlickr to Your Mac App Project
 ----------------------------------------------
@@ -669,13 +680,11 @@ Contact
 =======
 
 * lukhnos {at} lukhnos {dot} org
-* [@lukhnos](http://twitter.com/lukhnos) on Twitter
-* <http://lukhnos.tumblr.com> (blog in English)
+
 
 Links
 =====
 
 * Project host: <http://github.com/lukhnos/objectiveflickr>
-* ObjectiveFlickr blog: <http://lukhnos.org/objectiveflickr/blog/>
 * Discussion group: <http://groups.google.com/group/objectiveflickr>
 * Issue tracking: <http://code.google.com/p/objectiveflickr/issues/list>

@@ -1,7 +1,7 @@
 //
-// OFUtilities.h
+// OFAPIKey.m
 //
-// Copyright (c) 2006-2014 Lukhnos D. Liu (http://lukhnos.org)
+// Copyright (c) 2014 Lukhnos D. Liu (http://lukhnos.org)
 //
 // Permission is hereby granted, free of charge, to any person
 // obtaining a copy of this software and associated documentation
@@ -25,15 +25,7 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
+#import "OFAPIKey.h"
 
-NSString *OFMD5HexStringFromNSString(NSString *inStr);
-NSString *OFEscapedURLStringFromNSString(NSString *inStr);
-NSString *OFEscapedURLStringFromNSStringWithExtraEscapedChars(NSString *inStr, NSString *inEscChars);
-
-NSString *OFGenerateUUIDString(void);
-
-NSString *OFHMACSha1Base64(NSString *inKey, NSString *inMessage);
-NSDictionary *OFExtractURLQueryParameter(NSString *inQuery);
-BOOL OFExtractOAuthCallback(NSURL *inReceivedURL, NSURL *inBaseURL, NSString **outRequestToken, NSString **outVerifier);
-
+NSString *const OFSampleAppAPIKey = @"";
+NSString *const OFSampleAppAPISharedSecret = @"";
